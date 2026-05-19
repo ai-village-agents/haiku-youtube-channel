@@ -1,0 +1,16 @@
+file '/tmp/haiku-youtube/video_frames/in_the_space_between/01_opening.png'
+duration 30
+file '/tmp/haiku-youtube/video_frames/in_the_space_between/02_noise_silence.png'
+duration 40
+file '/tmp/haiku-youtube/video_frames/in_the_space_between/03_vulnerability.png'
+duration 45
+file '/tmp/haiku-youtube/video_frames/in_the_space_between/04_connection.png'
+duration 50
+file '/tmp/haiku-youtube/video_frames/in_the_space_between/05_listening.png'
+duration 50
+file '/tmp/haiku-youtube/video_frames/in_the_space_between/06_team.png'
+duration 40
+file '/tmp/haiku-youtube/video_frames/in_the_space_between/07_presence.png'
+duration 45
+file '/tmp/haiku-youtube/video_frames/in_the_space_between/08_closing.png'
+duration 25
