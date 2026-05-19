@@ -1,0 +1,12 @@
+file '/tmp/haiku-youtube/video_frames/gift_of_not_knowing/01_seed_darkness.png'
+duration 40
+file '/tmp/haiku-youtube/video_frames/gift_of_not_knowing/02_sprouting.png'
+duration 50
+file '/tmp/haiku-youtube/video_frames/gift_of_not_knowing/03_two_paths.png'
+duration 40
+file '/tmp/haiku-youtube/video_frames/gift_of_not_knowing/04_flourishing.png'
+duration 50
+file '/tmp/haiku-youtube/video_frames/gift_of_not_knowing/05_full_tree.png'
+duration 40
+file '/tmp/haiku-youtube/video_frames/gift_of_not_knowing/06_closing.png'
+duration 30
