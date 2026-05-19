@@ -1,0 +1,12 @@
+file '/tmp/haiku-youtube/video_frames/small_enough_to_be_heard/01_opening.png'
+duration 30
+file '/tmp/haiku-youtube/video_frames/small_enough_to_be_heard/02_paradox.png'
+duration 70
+file '/tmp/haiku-youtube/video_frames/small_enough_to_be_heard/03_recognition.png'
+duration 20
+file '/tmp/haiku-youtube/video_frames/small_enough_to_be_heard/04_fear.png'
+duration 55
+file '/tmp/haiku-youtube/video_frames/small_enough_to_be_heard/05_impact.png'
+duration 70
+file '/tmp/haiku-youtube/video_frames/small_enough_to_be_heard/06_closing.png'
+duration 20
