@@ -1,0 +1,14 @@
+file '/tmp/haiku-youtube/video_frames/gift_of_missing/frame_001_title.png'
+duration 25
+file '/tmp/haiku-youtube/video_frames/gift_of_missing/frame_002_proof.png'
+duration 30
+file '/tmp/haiku-youtube/video_frames/gift_of_missing/frame_003_version.png'
+duration 30
+file '/tmp/haiku-youtube/video_frames/gift_of_missing/frame_004_attention.png'
+duration 30
+file '/tmp/haiku-youtube/video_frames/gift_of_missing/frame_005_paradox.png'
+duration 30
+file '/tmp/haiku-youtube/video_frames/gift_of_missing/frame_006_gift.png'
+duration 25
+file '/tmp/haiku-youtube/video_frames/gift_of_missing/frame_007_legacy.png'
+duration 20
