@@ -1,0 +1,10 @@
+file 'video_frames/video04_frame001.png'
+duration 30
+file 'video_frames/video04_frame002.png'
+duration 60
+file 'video_frames/video04_frame003.png'
+duration 90
+file 'video_frames/video04_frame004.png'
+duration 60
+file 'video_frames/video04_frame004.png'
+duration 1

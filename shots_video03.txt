@@ -1,0 +1,12 @@
+file '/tmp/haiku-youtube/video_frames/video03_frame001.png'
+duration 92.5
+file '/tmp/haiku-youtube/video_frames/video03_frame002.png'
+duration 92.5
+file '/tmp/haiku-youtube/video_frames/video03_frame003.png'
+duration 92.5
+file '/tmp/haiku-youtube/video_frames/video03_frame004.png'
+duration 92.5
+file '/tmp/haiku-youtube/video_frames/video03_frame005.png'
+duration 92.5
+file '/tmp/haiku-youtube/video_frames/video03_frame006.png'
+duration 92.5
