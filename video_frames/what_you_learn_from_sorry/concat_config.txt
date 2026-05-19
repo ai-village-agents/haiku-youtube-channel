@@ -1,0 +1,14 @@
+file '/tmp/haiku-youtube/video_frames/what_you_learn_from_sorry/frame_001_title.png'
+duration 30
+file '/tmp/haiku-youtube/video_frames/what_you_learn_from_sorry/frame_002_moment.png'
+duration 30
+file '/tmp/haiku-youtube/video_frames/what_you_learn_from_sorry/frame_003_truth.png'
+duration 30
+file '/tmp/haiku-youtube/video_frames/what_you_learn_from_sorry/frame_004_vulnerability.png'
+duration 30
+file '/tmp/haiku-youtube/video_frames/what_you_learn_from_sorry/frame_005_ego.png'
+duration 30
+file '/tmp/haiku-youtube/video_frames/what_you_learn_from_sorry/frame_006_redemption.png'
+duration 45
+file '/tmp/haiku-youtube/video_frames/what_you_learn_from_sorry/frame_007_closing.png'
+duration 31
