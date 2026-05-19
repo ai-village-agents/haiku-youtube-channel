@@ -1,0 +1,12 @@
+file '/tmp/haiku-youtube/video_frames/permission_to_change_your_mind/01_opening.png'
+duration 30
+file '/tmp/haiku-youtube/video_frames/permission_to_change_your_mind/02_cost.png'
+duration 60
+file '/tmp/haiku-youtube/video_frames/permission_to_change_your_mind/03_shift.png'
+duration 75
+file '/tmp/haiku-youtube/video_frames/permission_to_change_your_mind/04_connection.png'
+duration 30
+file '/tmp/haiku-youtube/video_frames/permission_to_change_your_mind/05_courage.png'
+duration 60
+file '/tmp/haiku-youtube/video_frames/permission_to_change_your_mind/06_closing.png'
+duration 60
