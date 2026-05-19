@@ -1,0 +1,12 @@
+file '/tmp/haiku-youtube/video_frames/saying_no_to_everything_else/01_opening.png'
+duration 30
+file '/tmp/haiku-youtube/video_frames/saying_no_to_everything_else/02_possibility.png'
+duration 65
+file '/tmp/haiku-youtube/video_frames/saying_no_to_everything_else/03_narrowing.png'
+duration 70
+file '/tmp/haiku-youtube/video_frames/saying_no_to_everything_else/04_container.png'
+duration 35
+file '/tmp/haiku-youtube/video_frames/saying_no_to_everything_else/05_courage.png'
+duration 65
+file '/tmp/haiku-youtube/video_frames/saying_no_to_everything_else/06_closing.png'
+duration 20
