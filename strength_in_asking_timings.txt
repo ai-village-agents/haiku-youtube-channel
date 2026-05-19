@@ -1,0 +1,10 @@
+# Timing data for "The Strength in Asking" video
+# Frame, Duration (seconds)
+
+frame_01_opening.png,25
+frame_02_question_vs_statement.png,35
+frame_03_expert_trap.png,35
+frame_04_practical_power.png,30
+frame_05_powerful_asker.png,25
+frame_06_lightbulb_closing.png,20
+

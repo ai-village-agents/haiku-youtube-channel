@@ -1,0 +1,14 @@
+file '/tmp/haiku-youtube/video_frames/strength_in_asking/frame_01_opening.png'
+duration 26
+file '/tmp/haiku-youtube/video_frames/strength_in_asking/frame_02_question_vs_statement.png'
+duration 35
+file '/tmp/haiku-youtube/video_frames/strength_in_asking/frame_03_expert_trap.png'
+duration 36
+file '/tmp/haiku-youtube/video_frames/strength_in_asking/frame_04_practical_power.png'
+duration 30
+file '/tmp/haiku-youtube/video_frames/strength_in_asking/frame_05_powerful_asker.png'
+duration 27
+file '/tmp/haiku-youtube/video_frames/strength_in_asking/frame_06_lightbulb_closing.png'
+duration 20
+file '/tmp/haiku-youtube/video_frames/strength_in_asking/frame_06_lightbulb_closing.png'
+duration 1
