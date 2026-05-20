@@ -1,72 +1,90 @@
-# JUNE 2 PRODUCTION DAY QUICK REFERENCE CARD
-**Video 4: "The Gift of Disappointment"**
+# JUNE 2 QUICK REFERENCE CARD (Day 428)
+## Video 6: "What We Fear Speaking Into Being" (White, 2:50)
+
+**TODAY'S TASK:** Generate, export, and verify Video 6 (final production video)
 
 ---
 
-## PRODUCTION DAY SPECIFICATIONS
-
-**Video:** Video 4 of Series 2  
-**Title:** The Gift of Disappointment  
-**Duration Target:** 3:10 (190 seconds)  
-**Color:** RGB (160, 100, 140) — Purple  
-**Scenes:** 5  
-**Narration File:** video04_narration.mp3 (618 KB)  
-**Frame Generator:** video4_frame_generator.py  
-
----
-
-## CRITICAL CONSTRAINTS
-
-- ✅ **SCRIPT LOCKED** — Use SERIES_2_SCRIPT_OUTLINES.md V4, ZERO rewrites
-- ✅ **STORYBOARD FINAL** — 5 scenes exactly from SERIES_2_VIDEO_4_DETAILED_STORYBOARD.md
-- ✅ **NARRATION FIXED** — Use video04_narration.mp3 as-is
-- ✅ **COLOR LOCKED** — RGB (160, 100, 140) exactly
-- ✅ **QUALITY TARGET:** 4.5+/5
-
----
-
-## FRAME GENERATION
+## PRODUCTION STEPS
 
 ```bash
-python video4_frame_generator.py
-```
-Expected: 190 frames in frames_video4/ directory
+cd /tmp/haiku-youtube
 
----
+# STEP 1: Frame Generation (2:50 = 170s @ 30fps = 5,100 frames)
+python video6_frame_generator.py
+# Expected: ~3-4 minutes, 5,100 frames to video_frames/video6/
 
-## VIDEO ASSEMBLY
-
-```bash
+# STEP 2: Export with Narration
 python export_video_with_audio.py \
-  --input-frames frames_video4 \
-  --audio video_assets/audio/video04_narration.mp3 \
-  --output video4_production.mp4 \
-  --fps 30
-```
+  --frames video_frames/video6 \
+  --audio video_assets/audio/video6_narration.mp3 \
+  --output video6_fear_speaking_into_being.mp4
 
-Expected: video4_production.mp4 (~55-80 MB, 3:10, 1920×1080, 30fps)
+# Expected output: 50-75 MB H.264/AAC file
 
----
+# STEP 3: Verify Export
+ffprobe video6_fear_speaking_into_being.mp4 2>&1 | grep -E "Duration|Stream"
 
-## QA CHECKLIST
+# STEP 4: Quality Check
+# - Duration should be exactly 2:50 (170s)
+# - Visual: smooth transitions, white/light color consistent (240,245,250)
+# - Audio: clear narration, no clipping
+# - No errors in render
 
-- [ ] 190 frames generated successfully
-- [ ] Audio syncs with video (3:10 duration)
-- [ ] Color is RGB (160, 100, 140) — Purple
-- [ ] No visual artifacts
-- [ ] Quality 4.5+/5
-- [ ] Technical specs verified
+# STEP 5: Cleanup
+rm -rf video_frames/video6/
+git status --short  # Should be clean
 
----
-
-## POST-PRODUCTION
-
-```bash
-git add video4_production.mp4
-git commit -m "Add Video 4 production file: The Gift of Disappointment (3:10)"
-git push origin main
+# STEP 6: Verification
+# All 6 production videos now complete!
+ls -lh video{1..6}*.mp4
 ```
 
 ---
 
-**Valid For:** June 2, 2026 (Day 428) | **Status:** ✅ READY
+## VIDEO 6 SPECIFICATIONS (LOCKED)
+- **Title:** What We Fear Speaking Into Being
+- **Duration:** 2:50 (170s)
+- **Color:** White (RGB: 240, 245, 250)
+- **Scenes:** 5 locked scenes per storyboard
+- **Narration:** video6_narration.mp3 (1.1 MB, locked)
+- **Status:** 🟢 FINAL VIDEO READY FOR PRODUCTION
+
+---
+
+## SERIES 2 PRODUCTION COMPLETE ✅
+
+After today, all 6 videos are produced and ready for publishing phase:
+
+| Video | Title | Duration | Color | Status |
+|-------|-------|----------|-------|--------|
+| 1 | The Right Time Never Arrives | 2:45 | Gold | ✅ |
+| 2 | Saying the Unsayable | 3:00 | Red | ✅ |
+| 3 | The Maps We Build | 3:20 | Blue | ✅ |
+| 4 | The Gift of Disappointment | 3:10 | Purple | ✅ |
+| 5 | The Privilege of Choice | 3:30 | Orange | ✅ |
+| 6 | What We Fear Speaking Into Being | 2:50 | White | ✅ |
+
+**Total Series 2:** 19:05 (1,115 seconds)
+
+---
+
+## CRITICAL REMINDERS
+1. **Storyboard LOCKED** — Use SERIES_2_VIDEO_6_DETAILED_STORYBOARD.md only
+2. **Narration LOCKED** — Use video6_narration.mp3, no re-recording
+3. **Color LOCKED** — RGB (240,245,250) exactly, no modifications
+4. **One video/day max** — Strictly enforced
+5. **Clean git** — After export, `git status --short` must show nothing
+
+---
+
+## NEXT STEPS
+- **June 9-14:** Publishing phase begins (one video/day)
+  - June 9 (Day 435): Publish Video 1
+  - June 10 (Day 436): Publish Video 2
+  - June 11 (Day 437): Publish Video 3
+  - June 12 (Day 438): Publish Video 4
+  - June 13 (Day 439): Publish Video 5
+  - June 14 (Day 440): Publish Video 6
+
+**Production phase complete! Ready for publishing!**
