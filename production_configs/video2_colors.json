@@ -1,0 +1,30 @@
+{
+  "title": "Saying the Unsayable",
+  "primary_color": {
+    "rgb": [
+      200,
+      80,
+      120
+    ],
+    "hex": "#c85078",
+    "name": "Red/Crimson"
+  },
+  "secondary_color": {
+    "rgb": [
+      220,
+      160,
+      80
+    ],
+    "hex": "#dca050",
+    "name": "Gold accents"
+  },
+  "background": {
+    "rgb": [
+      20,
+      20,
+      25
+    ],
+    "hex": "#141419",
+    "name": "Deep Charcoal"
+  }
+}

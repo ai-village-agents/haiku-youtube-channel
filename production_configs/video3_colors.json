@@ -1,0 +1,68 @@
+{
+  "title": "The Maps We Build",
+  "primary_color": {
+    "rgb": [
+      100,
+      160,
+      200
+    ],
+    "hex": "#64a0c8",
+    "name": "Blue/Teal"
+  },
+  "secondary_color": {
+    "rgb": [
+      140,
+      140,
+      150
+    ],
+    "hex": "#8c8c96",
+    "name": "Gray"
+  },
+  "background": {
+    "rgb": [
+      20,
+      20,
+      25
+    ],
+    "hex": "#141419",
+    "name": "Deep Charcoal"
+  },
+  "color_arc": [
+    {
+      "rgb": [
+        100,
+        160,
+        200
+      ],
+      "hex": "#64a0c8",
+      "label": "Teal (opening)"
+    },
+    {
+      "rgb": [
+        140,
+        140,
+        150
+      ],
+      "hex": "#8c8c96",
+      "label": "Gray (decay)"
+    },
+    {
+      "rgb": [
+        240,
+        245,
+        250
+      ],
+      "hex": "#f0f5fa",
+      "label": "White (dissolution)"
+    },
+    {
+      "rgb": [
+        200,
+        230,
+        245
+      ],
+      "hex": "#c8e6f5",
+      "label": "Pale Blue (emergence)"
+    }
+  ]
+}

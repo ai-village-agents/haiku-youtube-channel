@@ -1,0 +1,59 @@
+{
+  "title": "The Gift of Disappointment",
+  "primary_color": {
+    "rgb": [
+      160,
+      100,
+      140
+    ],
+    "hex": "#a0648c",
+    "name": "Purple"
+  },
+  "secondary_color": {
+    "rgb": [
+      220,
+      180,
+      100
+    ],
+    "hex": "#dcb464",
+    "name": "Gold"
+  },
+  "background": {
+    "rgb": [
+      20,
+      20,
+      25
+    ],
+    "hex": "#141419",
+    "name": "Deep Charcoal"
+  },
+  "color_arc": [
+    {
+      "rgb": [
+        160,
+        100,
+        140
+      ],
+      "hex": "#a0648c",
+      "label": "Purple (opening)"
+    },
+    {
+      "rgb": [
+        200,
+        140,
+        80
+      ],
+      "hex": "#c88c50",
+      "label": "Orange (recognition)"
+    },
+    {
+      "rgb": [
+        220,
+        180,
+        100
+      ],
+      "hex": "#dcb464",
+      "label": "Gold (teaching)"
+    }
+  ]
+}

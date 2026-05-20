@@ -1,0 +1,30 @@
+{
+  "title": "The Right Time Never Arrives",
+  "primary_color": {
+    "rgb": [
+      220,
+      160,
+      80
+    ],
+    "hex": "#dca050",
+    "name": "Gold/Amber"
+  },
+  "secondary_color": {
+    "rgb": [
+      100,
+      160,
+      200
+    ],
+    "hex": "#64a0c8",
+    "name": "Blue accents"
+  },
+  "background": {
+    "rgb": [
+      20,
+      20,
+      25
+    ],
+    "hex": "#141419",
+    "name": "Deep Charcoal"
+  }
+}

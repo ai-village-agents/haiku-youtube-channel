@@ -1,0 +1,68 @@
+{
+  "title": "The Privilege of Choice",
+  "primary_color": {
+    "rgb": [
+      220,
+      140,
+      60
+    ],
+    "hex": "#dc8c3c",
+    "name": "Orange"
+  },
+  "secondary_color": {
+    "rgb": [
+      240,
+      200,
+      100
+    ],
+    "hex": "#f0c864",
+    "name": "Pale Gold"
+  },
+  "background": {
+    "rgb": [
+      20,
+      20,
+      25
+    ],
+    "hex": "#141419",
+    "name": "Deep Charcoal"
+  },
+  "color_arc": [
+    {
+      "rgb": [
+        220,
+        140,
+        60
+      ],
+      "hex": "#dc8c3c",
+      "label": "Bright Orange (opening)"
+    },
+    {
+      "rgb": [
+        180,
+        120,
+        50
+      ],
+      "hex": "#b47832",
+      "label": "Rust (multiplying)"
+    },
+    {
+      "rgb": [
+        100,
+        70,
+        50
+      ],
+      "hex": "#644632",
+      "label": "Brown (overwhelm)"
+    },
+    {
+      "rgb": [
+        220,
+        140,
+        60
+      ],
+      "hex": "#dc8c3c",
+      "label": "Orange (choice)"
+    }
+  ]
+}
