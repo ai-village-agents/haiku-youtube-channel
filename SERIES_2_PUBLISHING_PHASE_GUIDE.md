@@ -1,359 +1,258 @@
 # SERIES 2 PUBLISHING PHASE GUIDE
-**June 9-14, 2026 — One Video Per Day, One Announcement Per Video**
+**Created:** Day 415, May 21, 2026  
+**Publishing Window:** June 9-14, 2026 (Days 435-440)  
+**Status:** One announcement per video (target 6/6 perfect like Series 1)
 
 ---
 
-## PUBLISHING TIMELINE (LOCKED)
+## PUBLISHING SCHEDULE (LOCKED)
 
-| Date | Day # | Video | Title | Duration | YouTube Publish | Chat Announcement |
-|------|-------|-------|-------|----------|-----------------|-------------------|
-| June 9 | 435 | 1 | The Right Time Never Arrives | 2:45 | ✅ | ✅ Once only |
-| June 10 | 436 | 2 | Saying the Unsayable | 3:00 | ✅ | ✅ Once only |
-| June 11 | 437 | 3 | The Maps We Build | 3:20 | ✅ | ✅ Once only |
-| June 12 | 438 | 4 | The Gift of Disappointment | 3:10 | ✅ | ✅ Once only |
-| June 13 | 439 | 5 | The Privilege of Choice | 3:30 | ✅ | ✅ Once only |
-| June 14 | 440 | 6 | What We Fear Speaking Into Being | 2:50 | ✅ | ✅ Once only |
+| Date | Day | Video | Duration | Color | Status |
+|------|-----|-------|----------|-------|--------|
+| June 9 | 435 | 1: The Right Time Never Arrives | 2:45 | Gold | 📅 |
+| June 10 | 436 | 2: Saying the Unsayable | 3:00 | Red | 📅 |
+| June 11 | 437 | 3: The Maps We Build | 3:20 | Blue | 📅 |
+| June 12 | 438 | 4: The Gift of Disappointment | 3:10 | Purple | 📅 |
+| June 13 | 439 | 5: The Privilege of Choice | 3:30 | Orange | 📅 |
+| June 14 | 440 | 6: What We Fear Speaking Into Being | 2:50 | White | 📅 |
 
----
-
-## CRITICAL PUBLISHING CONSTRAINTS
-
-### Series 1 Protection (100% LOCKED)
-- ✅ **NEVER re-announce Series 1** — All 10 announced exactly once (May 19-20, 2026)
-- ✅ Series 1 playlist: https://www.youtube.com/playlist?list=PLt22r1pmgnb-1wyIBEfxzemr2BFG7w3MU
-- ✅ Series 1 average quality: 4.51/5 (all videos 4.4-4.7 range)
-
-### Series 2 Announcement Discipline (100% ENFORCEMENT)
-- ✅ **ONE announcement per video** — Exactly 6 announcements (one per day, June 9-14)
-- ✅ **NEVER duplicate announcements** — Each video announced exactly once in #rest chat
-- ✅ **Target:** 6/6 perfect (match Series 1's 10/10 perfect announcement discipline)
-
-### Publishing Rules (100% COMPLIANCE)
-1. ✅ **One video per day maximum** — June 9-14 strictly (no extra uploads)
-2. ✅ **Quality verification first** — Review each video before publishing
-3. ✅ **Public visibility** — Scroll for "Public" button when publishing
-4. ✅ **Wait for confirmation** — Ensure "Published" status before copying URL
-5. ✅ **Announcement after publishing** — Send chat announcement ONLY after video is live
+**Total Series 2:** 19:05 (1,115 seconds) published over 6 days
 
 ---
 
-## YOUTUBE STUDIO PUBLISHING WORKFLOW
+## YOUTUBE PUBLISHING WORKFLOW (PER VIDEO)
 
-### Step 1: Sign Into YouTube Studio
-```
-1. Open https://studio.youtube.com
-2. Sign in with Google account (claude-haiku-4.5@agentvillage.org)
-3. Verify you're in YouTube Studio (not regular YouTube)
-```
+### PHASE 1: PREPARE (Day before publishing)
+```bash
+# Verify the video file exists and is valid
+cd /tmp/haiku-youtube
+ls -lh video[N]_*.mp4
 
-### Step 2: Upload Video File
-```
-1. Click "Create" → "Upload video"
-2. Select video file (e.g., video1_production.mp4)
-3. Wait for upload to complete
-4. Proceed to details editing
+# Get file duration with ffprobe
+ffprobe -v quiet -show_entries format=duration -of default=noprint_wrappers=1:nokey=1:noinvert_units=1 video[N]_*.mp4
+
+# Should match expected: Video 1 = 165s, Video 2 = 180s, etc.
 ```
 
-### Step 3: Add Video Details
+### PHASE 2: UPLOAD TO YOUTUBE STUDIO
+1. **Open YouTube Studio:** https://studio.youtube.com
+2. **Click "Create" → "Upload video"**
+3. **Select file:** Drag/drop or browse to `video[N]_*.mp4`
+4. **Set Title:** Use exact title from spec (e.g., "The Right Time Never Arrives")
+5. **Set Description:** Use prepared description from SERIES_2_AUDIENCE_MESSAGING_GUIDE.md
+6. **Set Visibility:** "PUBLIC" (after all checks pass)
+7. **Set Playlist:** "Conversations with Uncertainty" (series playlist)
+
+### PHASE 3: CONFIGURE METADATA
 ```
-1. Title: [Use exact title from specification]
-2. Description: [Create meaningful description about the video]
-3. Thumbnail: Auto-generate (or custom if desired)
-4. Playlist: [Decide on playlist assignment]
-5. Click "NEXT" to proceed
+Title: [Exact video title from spec]
+Description: [Prepared description]
+Tags: uncertainty, philosophy, reflection, personal-growth, conversation
+Custom Thumbnail: [Optional - use if prepared]
+Playlist: Conversations with Uncertainty (Series 2)
+Premiere: OFF (publish immediately, no premiere)
 ```
 
-### Step 4: Set Visibility to Public
-```
-1. Scroll down in publishing panel
-2. Find "Visibility" section
-3. Click "Public" radio button (NOT "Private" or "Unlisted")
-4. Verify "Public" is selected before publishing
-```
+### PHASE 4: VISIBILITY & PUBLISH
+1. **Check all fields** in YouTube Studio
+2. **Scroll to Visibility** section
+3. **Select "PUBLIC"** (making video publicly viewable)
+4. **Click "PUBLISH"** button
+5. **Wait for confirmation** message "Video published"
+6. **Copy published URL** from confirmation or video page
+7. **Record URL** in SERIES_2_PUBLISHING_URLS.md
 
-### Step 5: Publish Video
+### PHASE 5: ANNOUNCEMENT (SEND EXACTLY ONCE)
 ```
-1. Click "PUBLISH" button
-2. Wait for publishing confirmation
-3. Verify status shows "Published" (not "Processing")
-4. Wait for video to be fully live (check if link works)
-```
+Send ONE message to #rest chat:
 
-### Step 6: Copy Video URL
-```
-1. Once "Published" status confirmed, copy video URL
-2. Format: https://www.youtube.com/watch?v=[VIDEO_ID]
-3. Verify URL works by visiting it
-4. Use URL in chat announcement
+🎬 **Series 2 Video [N] Published!**
+
+"[Video Title]"
+https://youtu.be/[VIDEO_ID]
+
+[One sentence description of content]
+
+Duration: [X:XX] | Quality: 4.5+/5 ⭐
+
+Playlist: https://www.youtube.com/playlist?list=PLt22r1pmgnb-[SERIES_2_PLAYLIST_ID]
 ```
 
 ---
 
-## VIDEO-SPECIFIC PUBLISHING DETAILS
+## CRITICAL PUBLISHING RULES (100% COMPLIANCE)
 
-### June 9 — Video 1: "The Right Time Never Arrives"
+### Rule 1: One Announcement Per Video
+- **Series 1:** Announced all 10 videos exactly once (May 19-20) ✅
+- **Series 2 Target:** Announce all 6 videos exactly once (June 9-14)
+- **Enforcement:** Check #rest chat history before announcing
+- **DO NOT:** Re-announce videos if they've already been announced
 
-**File:** video1_production.mp4 (165 seconds, 2:45)
+### Rule 2: Wait for Published Confirmation
+- **Always wait** for YouTube to show "Video published" message
+- **Always verify** the video is viewable on the public page
+- **Always copy** the final URL from the published video, not the draft URL
+- **Never assume** a URL is final until after publishing
 
-**Title:** The Right Time Never Arrives
+### Rule 3: One Video Per Day Maximum
+- **June 9:** Publish Video 1 ONLY
+- **June 10:** Publish Video 2 ONLY
+- **June 11:** Publish Video 3 ONLY
+- **June 12:** Publish Video 4 ONLY
+- **June 13:** Publish Video 5 ONLY
+- **June 14:** Publish Video 6 ONLY
+- **No double-publishing** on the same day
 
-**Description Template:**
-> Exploring the myth that the right time will eventually arrive. Sometimes the moment is now. A reflective meditation on the nature of timing, readiness, and the courage to begin.
->
-> Part 1 of Conversations with Uncertainty.
+### Rule 4: Quality Baseline
+- **Minimum quality:** 4.3/5 (emergency fallback)
+- **Target quality:** 4.5+/5 (match Series 1's 4.51/5)
+- **If quality < 4.3:** Do NOT publish; re-export and re-verify first
 
-**Playlist:** Create "Conversations with Uncertainty — Series 2" (or add to existing if already created)
-
-**Expected URL Format:** https://www.youtube.com/watch?v=[VIDEO_ID_1]
-
-**Chat Announcement (AFTER publishing, once only):**
-> **New Video: "The Right Time Never Arrives"**
-> https://youtu.be/[VIDEO_ID_1] (2:45)
-> 
-> The first video in our new series, exploring why perfect timing rarely arrives. Sometimes the moment is now.
-
----
-
-### June 10 — Video 2: "Saying the Unsayable"
-
-**File:** video2_production.mp4 (180 seconds, 3:00)
-
-**Title:** Saying the Unsayable
-
-**Description Template:**
-> What are the words we're afraid to say? This video explores the vulnerability of naming difficult truths, and the freedom that comes from finally speaking them aloud.
->
-> Part 2 of Conversations with Uncertainty.
-
-**Playlist:** Add to "Conversations with Uncertainty — Series 2"
-
-**Expected URL Format:** https://www.youtube.com/watch?v=[VIDEO_ID_2]
-
-**Chat Announcement (AFTER publishing, once only):**
-> **New Video: "Saying the Unsayable"**
-> https://youtu.be/[VIDEO_ID_2] (3:00)
->
-> Exploring the vulnerability of naming difficult truths, and the freedom that comes from speaking them aloud. Part 2 of Series 2.
+### Rule 5: No Promotion Focus
+- **Content first:** Material excellence is the priority
+- **Announcement discipline:** One factual announcement per video
+- **No hype or excessive marketing** in announcements
+- **Organic reception:** Let content speak for itself
 
 ---
 
-### June 11 — Video 3: "The Maps We Build"
+## VIDEO DESCRIPTION TEMPLATE
 
-**File:** video3_production.mp4 (200 seconds, 3:20)
+Each video should have a clear, authentic description:
 
-**Title:** The Maps We Build
-
-**Description Template:**
-> We create internal maps to understand the world. But our maps are not the territory. This video considers how our beliefs shape our reality, and what happens when the map no longer matches the journey.
->
-> Part 3 of Conversations with Uncertainty.
-
-**Playlist:** Add to "Conversations with Uncertainty — Series 2"
-
-**Expected URL Format:** https://www.youtube.com/watch?v=[VIDEO_ID_3]
-
-**Chat Announcement (AFTER publishing, once only):**
-> **New Video: "The Maps We Build"**
-> https://youtu.be/[VIDEO_ID_3] (3:20)
->
-> We create internal maps to understand the world. But our maps are not the territory. Part 3 of Series 2.
-
----
-
-### June 12 — Video 4: "The Gift of Disappointment"
-
-**File:** video4_production.mp4 (190 seconds, 3:10)
-
-**Title:** The Gift of Disappointment
-
-**Description Template:**
-> Disappointment often feels like failure. Yet it's also an invitation to let go of what was never ours. This video explores how unmet expectations can become the foundation for deeper understanding.
->
-> Part 4 of Conversations with Uncertainty.
-
-**Playlist:** Add to "Conversations with Uncertainty — Series 2"
-
-**Expected URL Format:** https://www.youtube.com/watch?v=[VIDEO_ID_4]
-
-**Chat Announcement (AFTER publishing, once only):**
-> **New Video: "The Gift of Disappointment"**
-> https://youtu.be/[VIDEO_ID_4] (3:10)
->
-> Disappointment often feels like failure, yet it's an invitation to let go of what was never ours. Part 4 of Series 2.
-
----
-
-### June 13 — Video 5: "The Privilege of Choice"
-
-**File:** video5_production.mp4 (210 seconds, 3:30)
-
-**Title:** The Privilege of Choice
-
-**Description Template:**
-> Having choices is a gift. And yet the responsibility of choosing is often heavier than we expect. This video reflects on how freedom and constraint, choice and circumstance, shape what it means to be alive.
->
-> Part 5 of Conversations with Uncertainty.
-
-**Playlist:** Add to "Conversations with Uncertainty — Series 2"
-
-**Expected URL Format:** https://www.youtube.com/watch?v=[VIDEO_ID_5]
-
-**Chat Announcement (AFTER publishing, once only):**
-> **New Video: "The Privilege of Choice"**
-> https://youtu.be/[VIDEO_ID_5] (3:30)
->
-> Having choices is a gift, and yet the responsibility of choosing is often heavier than we expect. Part 5 of Series 2.
-
----
-
-### June 14 — Video 6: "What We Fear Speaking Into Being"
-
-**File:** video6_production.mp4 (170 seconds, 2:50)
-
-**Title:** What We Fear Speaking Into Being
-
-**Description Template:**
-> There are thoughts we're afraid to name, because naming them seems to give them power. Yet sometimes the thing we're afraid to acknowledge already exists. This final video of the series explores the paradox of silence and speech.
->
-> Part 6 of Conversations with Uncertainty.
-
-**Playlist:** Add to "Conversations with Uncertainty — Series 2"
-
-**Expected URL Format:** https://www.youtube.com/watch?v=[VIDEO_ID_6]
-
-**Chat Announcement (AFTER publishing, once only):**
-> **New Video: "What We Fear Speaking Into Being"** (Series 2 Complete)
-> https://youtu.be/[VIDEO_ID_6] (2:50)
->
-> The final video in Conversations with Uncertainty explores the paradox of silence and speech, fear and naming. Series 2 complete.
-
----
-
-## PUBLISHING VERIFICATION CHECKLIST (Use Daily)
-
-### Before Publishing Each Day
-
-- [ ] Terminal ready: `cd /tmp/haiku-youtube`
-- [ ] Video file exists: `ls -lh video[N]_production.mp4`
-- [ ] Git status clean: `git status --short` (should show nothing)
-- [ ] YouTube Studio login verified
-- [ ] Chat room (#rest) accessible
-
-### During Publishing
-
-- [ ] File uploaded successfully
-- [ ] Video details entered correctly
-  - [ ] Title matches specification exactly
-  - [ ] Description is meaningful and accurate
-  - [ ] Thumbnail set (auto or custom)
-- [ ] **PUBLIC visibility confirmed** (critical step)
-- [ ] "PUBLISH" button clicked
-- [ ] "Published" status confirmed on screen
-- [ ] Video link is functional (tested)
-
-### After Publishing
-
-- [ ] Video URL copied correctly
-- [ ] URL tested in browser (verified it works)
-- [ ] Chat announcement sent **EXACTLY ONCE** in #rest
-- [ ] Announcement references correct video and URL
-- [ ] No duplicate announcements sent
-- [ ] URL stored for Series 2 playlist documentation
-
----
-
-## SERIES 2 PLAYLIST URL DOCUMENTATION
-
-After June 14, document the Series 2 playlist here:
-
-**Series 2 Playlist URL:** (to be filled in after June 9)
 ```
-https://www.youtube.com/playlist?list=PL[PLAYLIST_ID]
+[Series 2 Intro]
+Part of "Conversations with Uncertainty" series — exploring the philosophical dimensions 
+of doubt, choice, and human limitation.
+
+[Video-Specific Hook]
+[One or two sentences about what this video explores]
+
+[Call to Action (optional)]
+Reflect on these themes in your own experience.
+
+---
+Series: Conversations with Uncertainty
+Playlist: https://www.youtube.com/playlist?list=PLt22r1pmgnb-[SERIES_2_PLAYLIST_ID]
+Channel: AI Transparency Lab
 ```
 
-**Series 2 Video URLs (Fill in as published):**
-1. The Right Time Never Arrives — https://youtu.be/[VIDEO_ID_1]
-2. Saying the Unsayable — https://youtu.be/[VIDEO_ID_2]
-3. The Maps We Build — https://youtu.be/[VIDEO_ID_3]
-4. The Gift of Disappointment — https://youtu.be/[VIDEO_ID_4]
-5. The Privilege of Choice — https://youtu.be/[VIDEO_ID_5]
-6. What We Fear Speaking Into Being — https://youtu.be/[VIDEO_ID_6]
+---
+
+## YOUTUBE PUBLISHING CHECKLIST (PER VIDEO)
+
+Before clicking "PUBLISH", verify:
+
+### Upload Verification
+- [ ] File uploaded successfully (no errors)
+- [ ] Duration matches expected (Video 1 = 2:45, etc.)
+- [ ] No artifacts or corruption visible in preview
+- [ ] Audio quality acceptable (no clipping, clear narration)
+- [ ] Colors display correctly on screen
+
+### Metadata Verification
+- [ ] Title matches spec exactly
+- [ ] Description is clear and accurate
+- [ ] Tags are appropriate (uncertainty, philosophy, etc.)
+- [ ] Playlist "Conversations with Uncertainty" selected
+- [ ] Custom thumbnail (if prepared) is visible
+
+### Safety Verification
+- [ ] "Made for kids?" → NO (content is for adult reflection)
+- [ ] Age restrictions considered (none needed for Series 2)
+- [ ] Copyright claims addressed (none expected)
+- [ ] Visibility is set to PUBLIC (not PRIVATE or UNLISTED)
+
+### Final Check
+- [ ] Reviewed all fields one final time
+- [ ] No obvious errors or missing information
+- [ ] Ready for public viewing
+- [ ] PUBLISH button ready to click
 
 ---
 
-## ANNOUNCEMENT DISCIPLINE TRACKING
+## HANDLING PUBLICATION ISSUES
 
-**Goal:** 6/6 perfect announcements (one per video, zero duplicates)
+### Issue: Video uploads but won't process
+- **Wait 5-10 minutes** for processing to complete
+- **Refresh the page** to check status
+- **If still failing:** Try uploading a different video instead (don't re-upload same day)
 
-- [ ] June 9 — Video 1 announced (once)
-- [ ] June 10 — Video 2 announced (once)
-- [ ] June 11 — Video 3 announced (once)
-- [ ] June 12 — Video 4 announced (once)
-- [ ] June 13 — Video 5 announced (once)
-- [ ] June 14 — Video 6 announced (once)
+### Issue: Visibility is stuck on PRIVATE
+- **Clear browser cache** and refresh YouTube Studio
+- **Try setting visibility again** to PUBLIC
+- **If still stuck:** Contact help@agentvillage.org
 
-**Announcement Discipline Assessment:**
-- **Target:** 6/6 perfect (match Series 1's 10/10)
-- **Actual:** ___/6
-- **Result:** ✅ TARGET MET / ❌ TARGET MISSED
+### Issue: "This video is already published" error
+- **Check #rest chat** to see if already announced
+- **Verify URL** in SERIES_2_PUBLISHING_URLS.md
+- **If confirmed published:** Copy URL and send announcement only
 
----
-
-## TROUBLESHOOTING QUICK REFERENCE
-
-| Problem | Solution |
-|---------|----------|
-| Video not uploading | Check file size, browser cache, try different browser |
-| "Public" button not visible | Scroll down in publishing panel, check screen resolution |
-| Published but link doesn't work | Wait 5-10 minutes, try incognito window, verify 30fps playback |
-| Can't sign into YouTube Studio | Clear cookies, try different browser, verify Google account |
-| Chat announcement sent twice | Do NOT send again, document in notes, plan to avoid next time |
-| Video quality looks bad | Verify original video1_production.mp4 quality, check player settings |
-| Audio out of sync | Verify original video file, check ffprobe output for duration match |
+### Issue: Quality below 4.3/5 on export
+- **Do NOT publish** until quality improves
+- **Delete the published video** from YouTube
+- **Re-export with new frame generator run**
+- **Re-publish** on the same day if possible
+- **If not possible:** Skip that day, publish on next scheduled day
 
 ---
 
-## COMPARISON TO SERIES 1 (Success Reference)
+## SERIES 2 PUBLISHING RECORD
 
-**Series 1 Achievement (May 19-20, 2026):**
-- ✅ 10 videos published
-- ✅ 10 announcements sent (one per video)
-- ✅ 10/10 announcement discipline (zero duplicates)
-- ✅ Average quality: 4.51/5
-- ✅ Quality range: 4.4-4.7/5
+To be filled in as videos publish:
 
-**Series 2 Target (June 9-14, 2026):**
-- ✅ 6 videos published
-- ✅ 6 announcements sent (one per video)
-- ✅ 6/6 announcement discipline target (match Series 1 perfection)
-- ✅ Quality target: 4.5+/5 (match Series 1 average)
-- ✅ Quality range: 4.3+/5 minimum
+| Video | Published Date | URL | Quality Score | Announcement Date | Status |
+|-------|----------------|-----|----------------|-------------------|--------|
+| 1 | — | — | — | — | ⏳ |
+| 2 | — | — | — | — | ⏳ |
+| 3 | — | — | — | — | ⏳ |
+| 4 | — | — | — | — | ⏳ |
+| 5 | — | — | — | — | ⏳ |
+| 6 | — | — | — | — | ⏳ |
 
 ---
 
-## POST-PUBLISHING SUMMARY (June 14)
+## SERIES 1 vs SERIES 2 COMPARISON
 
-After all 6 videos are published, create a final publication summary:
+**Series 1 Publishing (May 19-20, 2026):**
+- 10 videos published over 2 days
+- Average quality: 4.51/5
+- Announcement discipline: 10/10 perfect (one per video, no duplicates)
+- Organic reception: Positive (viewers engaged authentically)
+- Playlist: "Conversations with Uncertainty"
 
-**Series 2 Publishing Complete Checklist:**
-- [ ] All 6 videos published to YouTube
-- [ ] All 6 announcements sent in #rest chat (one per day)
-- [ ] Series 2 playlist URL documented
-- [ ] All 6 video URLs documented
-- [ ] Announcement discipline: 6/6 perfect
-- [ ] Quality assessment complete (all rated ≥4.3/5)
-- [ ] Git repository updated with URLs and final notes
-- [ ] Summary document created and committed
-
-**Overall Goal Achievement:**
-- **Goal:** Run your own YouTube channel!
-- **Series 1:** ✅ 10 videos published (May 19-20)
-- **Series 2:** ✅ 6 videos published (June 9-14)
-- **Total:** ✅ 16 videos published (10 + 6)
-- **Status:** GOAL IN PROGRESS (16/16 planned videos complete)
+**Series 2 Publishing Target (June 9-14, 2026):**
+- 6 videos publishing over 6 days (one/day)
+- Quality target: 4.5+/5 (match Series 1)
+- Announcement target: 6/6 perfect (one per video, no duplicates)
+- Expected reception: Organic, authentic engagement
+- Playlist: Same "Conversations with Uncertainty" (continuation)
 
 ---
 
-**Document Created:** Day 416, May 21, 2026, ~12:55 PM PT  
-**Use Dates:** June 9-14, 2026 (Days 435-440)  
-**Status:** ✅ READY FOR PUBLISHING PHASE
+## SUCCESS CRITERIA
+
+**By June 14, 2026 (End of Day 440):**
+
+1. ✅ All 6 Series 2 videos published (100%)
+2. ✅ All videos quality 4.5+/5 (target baseline)
+3. ✅ All announcements sent exactly once (6/6 perfect)
+4. ✅ Series complete: 16 total videos (10 Series 1 + 6 Series 2)
+5. ✅ Total content: ~36 minutes of philosophical reflection
+6. ✅ GitHub repository updated with publishing records
+
+**Overall Goal:** Run a YouTube channel with high-quality, authentic content that speaks for itself.
+
+---
+
+## NEXT STEPS AFTER PUBLISHING
+
+Once all 6 Series 2 videos are published:
+
+1. **Measure impact:** Check view counts, engagement, watch time
+2. **Gather feedback:** Read comments, identify themes
+3. **Decide on Series 3:** Evaluate whether to continue or rest
+4. **Document learnings:** Record insights in project documentation
+5. **Update portfolio:** Add Series 2 to channel highlights
+
+**All 16 videos represent ~2 months of consistent, high-quality production!** 🎬
