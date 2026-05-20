@@ -1,8 +1,0 @@
-file '/tmp/haiku-youtube/video_frames/frame7_1.png'
-duration 3
-file '/tmp/haiku-youtube/video_frames/frame7_2.png'
-duration 2.5
-file '/tmp/haiku-youtube/video_frames/frame7_3.png'
-duration 2.5
-file '/tmp/haiku-youtube/video_frames/frame7_4.png'
-duration 2
