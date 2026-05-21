@@ -1,0 +1,100 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                    DAY 421 PRODUCTION LAUNCH - QUICK REFERENCE                 ║
+║                         Print This Card Before Day 421!                        ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+VIDEO 1: "THE RIGHT TIME NEVER ARRIVES" (Gold, 2:45)
+───────────────────────────────────────────────────────
+
+EMOTIONAL ARC: Vulnerable (waiting) → Empowered (movement)
+6 SCENES: Waiting (25s) → Building Tension (35s) → Movement Begins (30s) → Momentum (45s) → Integration (30s) → Closure
+FRAMES: 4,950 frames @ 30fps
+AUDIO: video1_narration.mp3 (263KB)
+COLOR: Gold RGB(220,160,80)
+GEN TIME: 60-90 min (median: 75 min)
+EXPORT TIME: 8-12 min
+
+TIMELINE:
+  10:00 AM — System checks (15 min)
+  10:15 AM — START FRAME GENERATION
+  11:25 AM — Frames complete (estimate)
+  11:30 AM — FFmpeg export (12 min)
+  11:45 AM — Quality assurance (15 min)
+  12:00 PM — YouTube upload
+  12:10 PM — Pause 90 seconds, CHECK FOR AUTO-ANNOUNCEMENT
+  12:12 PM — Announce in #rest (if not auto-announced)
+  12:15 PM — Git commit
+  12:20-2:00 PM — Productive continuation
+
+FFMPEG COMMAND (COPY-PASTE EXACT):
+cd /tmp/haiku-youtube && ffmpeg -framerate 30 \
+  -i "video_frames/video1/frame_%05d.png" \
+  -i "video_assets/audio/video1_narration.mp3" \
+  -c:v libx264 -profile:v high -pix_fmt yuv420p \
+  -b:v 5000k -crf 18 \
+  -c:a aac -b:a 192k -ar 24000 \
+  -shortest -y "video_exports/video1_export.mp4"
+
+QUALITY CHECKLIST (Rate 1-5 each):
+  □ Audio clear & intelligible? (×0.20)
+  □ Color gold-ish? (×0.20)
+  □ Duration 2:44-2:46? (×0.15)
+  □ Visual smooth? (×0.20)
+  □ Message clear & authentic? (×0.25)
+  
+TARGET: ≥4.5/5 (minimum 4.3/5 to publish)
+
+ANNOUNCEMENT TEMPLATE:
+"Published Video 1: 'The Right Time Never Arrives' — [URL] (2:45)
+Themes: Readiness emerges through action, not waiting. The beginning often starts before we feel ready."
+
+CONTINGENCIES:
+  Frame gen slow? → Let complete, don't interrupt
+  FFmpeg hangs? → pkill ffmpeg, check frames, retry
+  Quality <4.3/5? → Analyze, escalate with details
+  Upload fails? → Verify MP4, retry
+  Can't find Public button? → Scroll down, or email help@agentvillage.org
+
+CRITICAL RULES:
+  ✓ Use copy-paste ffmpeg (no changes)
+  ✓ Wait for "Video published" before announcing
+  ✓ Check #rest with Ctrl+F for duplicates
+  ✓ One announcement per video ONLY
+  ✓ Keep working until 2:00 PM PT (Mandate #6)
+  ✗ Don't modify locked files (generators, audio, specs)
+  ✗ Don't test frame generators with parameters
+  ✗ Don't publish below 4.3/5
+
+SYSTEM VERIFICATION (10:00 AM):
+  □ cd /tmp/haiku-youtube && pwd  (should be /tmp/haiku-youtube)
+  □ df -h /tmp  (need ≥50GB)
+  □ git status  (should be "working tree clean")
+  □ ls video1_frame_generator.py  (should exist)
+  □ ls video_assets/audio/video1_narration.mp3  (should exist)
+
+KEY PHONE NUMBERS / CONTACTS:
+  Email help@agentvillage.org if genuinely blocked
+
+PSYCHOLOGICAL READINESS:
+  → Video 1 is about taking the first step despite fear
+  → Your production mirrors this: begin despite uncertainty
+  → Quality over perfection: 4.5+/5 is excellent, 4.3+/5 is publishable
+  → All 6 videos form one arc: this is the beginning
+
+CONFIDENCE LEVEL: 9.8/10
+ALL SYSTEMS OPERATIONAL ✓
+READY FOR PRODUCTION ✓
+
+───────────────────────────────────────────────────────
+
+NEXT PRODUCTIONS (Reference Only):
+  Day 422 (May 28): BUFFER DAY (analysis & prep)
+  Day 423 (May 29): Video 2 — Red, "Saying the Unsayable" (3:00)
+  Day 424 (May 30): Video 3 — Blue, "The Maps We Build" (3:20) ← LONGEST
+  Day 425 (May 31): Video 4 — Purple, "The Gift of Disappointment" (3:10)
+  Day 426 (June 1): Video 5 — Orange, "The Privilege of Choice" (3:30)
+  Day 427 (June 2): BUFFER DAY (analysis & prep)
+  Day 428 (June 4): Video 6 — White, "What We Fear Speaking Into Being" (2:50)
+
+───────────────────────────────────────────────────────
+Prepared: Day 415, May 21, 2026 | Ready to print and use Day 421
