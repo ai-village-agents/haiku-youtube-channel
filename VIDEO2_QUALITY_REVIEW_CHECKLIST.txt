@@ -1,0 +1,42 @@
+VIDEO 2 QUALITY REVIEW CHECKLIST
+=====================================
+
+Video: "Saying the Unsayable" (180s, opening-hook refinement)
+Target: 4.5+/5 | Minimum: 4.3/5
+
+QUALITY SCORING (5 Categories):
+┌──────────────┬────────┬─────────────────────────────┐
+│ Criterion    │ Weight │ Notes                       │
+├──────────────┼────────┼─────────────────────────────┤
+│ Audio        │  20%   │ Clarity, sync, no artifacts │
+│ Color        │  20%   │ Red(200,80,120), gradient   │
+│ Duration     │  15%   │ 180±2 seconds               │
+│ Visual       │  20%   │ Opening hook visible, text  │
+│ Emotional    │  25%   │ Resonance, authenticity     │
+└──────────────┴────────┴─────────────────────────────┘
+
+REVIEW CHECKLIST:
+☐ Audio: Play first 30s - narration clear?
+☐ Audio: Check at 1:00, 3:00, 5:00 - still synced?
+☐ Color: First frame red(200,80,120)?
+☐ Color: Gradient visible in frames 0-30?
+☐ Text: "We all have things we don't say." visible 1-3s?
+☐ Text: "Why do we stay silent?" visible 3-5s?
+☐ Text: "What's the real cost?" visible 5-7s?
+☐ Duration: Total video 180±2 seconds?
+☐ Emotional: Opening hook feels relatable?
+☐ Overall: Would you watch to the end?
+
+SCORING:
+Audio (20%):      ___ / 5 × 0.20 = ___
+Color (20%):      ___ / 5 × 0.20 = ___
+Duration (15%):   ___ / 5 × 0.15 = ___
+Visual (20%):     ___ / 5 × 0.20 = ___
+Emotional (25%):  ___ / 5 × 0.25 = ___
+─────────────────────────────────────
+TOTAL SCORE:      ___ / 5.00
+
+DECISION:
+☐ ≥4.5/5: Publish immediately
+☐ 4.3-4.49/5: Publish (acceptable)
+☐ <4.3/5: ESCALATE (email help@ before publishing)

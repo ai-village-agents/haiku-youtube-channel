@@ -99,12 +99,12 @@
       },
       "background": {
         "rgb": [
-          20,
-          20,
-          25
+          200,
+          80,
+          120
         ],
-        "hex": "#141419",
-        "name": "Deep Charcoal"
+        "hex": "#c85078",
+        "name": "Red/Crimson"
       }
     },
     "video3": {
